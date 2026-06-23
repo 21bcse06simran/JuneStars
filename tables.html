@@ -24,7 +24,8 @@
     tr----table row
     th  ----table header data
     td------table data
-    
+    border --- depreciate one means it work in previous version but now a new tags is used insteed of old one tags .
+    e.g. - For Bold prevously we use <b></b> tags but now we use <strong></strong> tag so here <b></b> tag is the depreciate one .
 
 
     List:
@@ -33,8 +34,13 @@
     1. order list
         diaply items in sequence using numbers or letters
     2. unorder list
-    3. data defination list
+    3. data description list
     
+
+    Description List 
+        dl ------ Description list
+        dt ------ Description term
+        dd ------ Description data
     -->
 
     <!-- <p>Lorem <b>ipsum</b> <strong>dolor</strong> <u>sit</u> <span style="text-decoration: underline;">amet</span>, <i>consectetur</i> <em>adipisicing</em> elit. Odio, molestias.</p> -->
@@ -48,7 +54,7 @@
         <tr>
             <td>Jhon</td>
             <td style="background-color: red; color: white;" rowspan="2" colspan="2">23</td>
-            <!-- <td>JFS</td> -->
+            <!-- <td>JFS</td>  (Not necessary Extra data so we need to remove this)-->
 
         </tr>
         <tr>
@@ -97,6 +103,7 @@
             <td>18000</td>
         </tr>
     </table>
+
     <ol style="list-style-type: number;" start="27" reversed>
         <li>Open Browser</li>
         <li>Visit Website</li>
