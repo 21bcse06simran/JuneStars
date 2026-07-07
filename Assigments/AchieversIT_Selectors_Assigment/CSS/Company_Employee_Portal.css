@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+header {
+    background-color: #111827;
+    padding: 20px;
+    text-align: center;
+}
+
+.employee-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.company-logo {
+    color: #38bdf8;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.employee-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+.employee-name {
+    font-size: 1.4rem;
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.employee-details p {
+    color: #4b5563;
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+.team-lead + .employee-card {
+    border-left: 5px solid #3b82f6;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.15);
+}
+.team-lead ~ .employee-card {
+    background-color: #f0fdf4;
+}
+.employee-card:first-child {
+    border-top: 4px solid #eab308;
+}
+.employee-card:first-child::before {
+    content: "⭐ Star Performer";
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #fef08a;
+    color: #a16207;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+.employee-card:last-child::before {
+    content: "🛠️ Support Team";
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+.employee-name::before {
+    content: "👤 ";
+}
+.employee-card:nth-child(even) {
+    border-inline-start: 4px solid #6b7280;
+}
+.team-lead {
+    background-color: #f8fafc;
+    border: 1px dashed #64748b;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #9ca3af;
+    font-size: 0.85rem;
+}

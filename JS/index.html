@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first page</title>
+    <style>
+        th,td{
+            border: 2px solid rgb(61, 61, 118);
+            text-align: center;
+
+        }
+        table{
+            width: 500px;
+        }
+        tr{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <pre>This is my Portfolio</pre>
+    </header>
+
+    <main>
+        <section>Education: Btech in Computer Science</section>
+        <section>Projects: Triange paitent (In ML, Deep Learning) And Fish toxicity (In ML)</section>
+        <article>My story: My name is Simran Mahapatra</article>
+        <a href="https://www.google.com/" target="_main"><img src="https://storage.googleapis.com/gd-prod/images/a910d418-7123-4bc4-aa3b-ef7e25e74ae6.faa49ab5e1fff880.webp" alt="google" height="100"></a>
+        <aside>This is the add</aside>
+
+        <div>
+            <p>Hello World</p>
+            <p>Namaste</p>
+            <p>Prannam</p>
+            <p>Hey</p>
+            <p>Hii</p>
+        </div>
+
+        <span>
+            Byeee...body
+        </span>
+        <!-- 
+        list -list of  Items in organise way
+        3 types
+        1.Order list
+          display items in sequence using numbers or letters
+        2.Unorder list
+          display items 
+        3.data description list
+        -->
+        <ol style="list-style-type: lower-alpha;" start="22" reversed>
+            <li>Open Browser</li>
+            <li>Visit Website</li>
+            <li>Login</li>
+        </ol>
+        <ul>
+            <li>Apple
+                <ul>Color: red</ul>
+                <ul>Season: Winter</ul>
+            </li>
+            <li>Mango
+                <ol>
+                    <li>Color: Yellow</li>
+                    <li>Season: Summer</li>
+                </ol>
+            </li>
+            <li>Dragon Food</li>
+
+        </ul>
+        <!-- 
+        Description List 
+        dl ------ Description list
+        dt ------ Description term
+        dd ------ Description data
+         -->
+
+
+        <dl>
+            <dt>HTML:</dt>
+            <dd>Hyper text markup language</dd>
+        </dl>
+
+        <!-- 
+        table ---- tcreate table 
+        tr ------- table row
+        th ------- table head
+        td ------- table data
+        border --- depricate one means it work in previous version but now a new keyword  is used insteed of 
+         -->
+
+        <!-- <table border="1"> -->
+        <table>
+            <caption>Student Data</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No.</th>
+                    <th>Marks</th>
+                    <th>Review</th>
+                </tr>
+                <tr>
+                    <th colspan="4">Student Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Simran</td>
+                    <td>1</td>
+                    <td>99%</td>
+                    <td>Excelent</td>
+                </tr>
+                <tr>
+                    <td>Ghoutami</td>
+                    <td>2</td>
+                    <td>90%</td>
+                    <td>Well Done</td>
+                </tr>
+                <tr>
+                    <td>Jyoti</td>
+                    <td>3</td>
+                    <td>95%</td>
+                    <td>Great</td>
+                </tr>
+                            
+            </tbody>
+        </table>
+
+
+        <form action="/JS/app.js">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Password">
+            <label for="101">
+                <input type="radio" value="Class X" name="class" id="101">Class X
+            </label>
+            <label for="102">
+                <input type="radio" value="Class XI" name="class" id="102">Class XI
+            </label>
+        </form>
+    </main>
+
+    <footer>
+        Contact me at hello@ac.com
+    </footer>
+</body>
+</html>

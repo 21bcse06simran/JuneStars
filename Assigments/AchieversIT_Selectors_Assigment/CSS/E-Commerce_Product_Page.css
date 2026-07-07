@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+}
+header {
+    background-color: #0f172a;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+}
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 5%;
+}
+.logo{
+    font-family: 'Arial Black', Impact, sans-serif;
+    font-size: 2rem;
+    color: #38bdf8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #0284c7;
+}
+.product-card{
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 12x rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.product-image-placeholder {
+    font-size: 4rem;
+    text-align: center;
+    background-color: #f8fafc;
+    padding: 20px 0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.product-card .product-name {
+    font-size: 1.35rem;
+    color: #1e293b;
+    margin: 10px 0;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.offer-section .current-price {
+    color: #ef4444;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.offer-section .old-price {
+    color: #94a3b8;
+    text-decoration: line-through;
+    font-size: 1rem;
+    margin-right: 8px;
+}
+.current-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+.product-card:first-child::before {
+    content: "🔥 Hot Deal";
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background-color: #ef4444;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(239, 68, 68, 0.4);
+}
+.product-card:last-child::before {
+    content: "⏳ Limited Stock";
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background-color: #f59e0b;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(245, 158, 11, 0.4);
+}
+.product-card:nth-child(even) {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+.product-card .product-name::before {
+    content: "🛒 ";
+}
+.discount-item .product-name::after {
+    content: "SAVE %";
+    display: inline-block;
+    background-color: #22c55e;
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    margin-left: 8px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.add-to-cart-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    /* transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; */
+}
+.add-to-cart-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+}
+.product-card .description {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 10px 0 15px 0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}

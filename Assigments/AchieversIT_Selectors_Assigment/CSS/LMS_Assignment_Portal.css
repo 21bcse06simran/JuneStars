@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+header{
+    background-color: #1e3a8a;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.assignment-container {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.portal-title {
+    color: #f1f5f9;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.assignment-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+
+.assignment-desc {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+.assignment-card:first-child{
+    border-left: 5px solid #3b82f6;
+}
+.assignment-card:first-child::before{
+    content: "✨ New Assignment";
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+.assignment-card:nth-child(even) {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+.submit-btn {
+    background-color: #0f172a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    /* transition: background-color 0.2s ease, transform 0.1s ease; */
+}
+.submit-btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+}
+.assignment-title {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin: 0;
+    font-weight: 700;
+}
+.assignment-title::before {
+    content: "📄 ";
+}
+.completed .assignment-title::after {
+    content: "Turned In";
+    display: inline-block; 
+    background-color: #10b981;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-left: 12px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.assignment-desc::first-letter {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}

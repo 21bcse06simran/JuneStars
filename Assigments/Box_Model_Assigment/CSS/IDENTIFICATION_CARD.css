@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.id-card {
+    width: 480px;
+    background-color: #ffffff;
+    border: 3px solid #1a1e5c;
+    box-sizing: border-box;
+    
+    /* 1. Added modern border-radius and an enhanced premium shadow */
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    overflow: hidden; /* Crucial: Stops the blue header background from spilling over the new rounded corners */
+}
+
+.card-header {
+    background-color: #1a1e5c;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+.card-body {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.photo-container {
+    flex: 0 0 150px;
+    height: 180px;
+    border: 2px solid #1a1e5c;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    /* 2. Added matching subtle border-radius to the photo window */
+    border-radius: 8px; 
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-table {
+    width: 100%;
+}
+
+.info-table td {
+    padding: 3px 0;
+}
+
+.label {
+    width: 75px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.value {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.value.name {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.value.title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.company-logo {
+    font-size: 40px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: 2px;
+    margin-top: auto;
+    line-height: 1;
+}
