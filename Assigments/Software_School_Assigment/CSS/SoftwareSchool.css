@@ -48,6 +48,7 @@ button{
     border-radius: 10px;
     margin: auto;
     font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .Parent{
     display: flex;
@@ -148,27 +149,43 @@ button{
     color:black;
     text-align:center;
 }
-.features{
+.feature-section{
     width:75%;
     margin:50px auto;
+}
+
+.feature-section h1{
+    color:white;
+    margin-bottom:35px;
+}
+.features h1{
+    width:100%;
+    color:white;
+    margin-bottom:30px;
+}
+.features{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
 }
+
 .card{
-    width:31%;
+    width:32%;
     background:white;
     border-radius:12px;
     padding:25px;
     margin-bottom:30px;
     box-sizing:border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.child_7 .card{
-    width:30%;
+
+.card:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 2px 15px white;
 }
 .card h3{
     color:black;
-    font-size:28px;
+    font-size:20px;
     margin-bottom:15px;
 }
 .card p{
@@ -411,4 +428,9 @@ button{
     text-align: center;
     position: relative;
     left: 200px;
+}
+button:hover{
+    background-color: rgb(232, 232, 90);
+    transform: translateY(-3px) scale(1.05);
+    opacity: 1;
 }

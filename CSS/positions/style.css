@@ -2,7 +2,7 @@
 WHat is Position in CSS:
 position is used to control the where an element should appear in the webpage
 
-by defaut, HTML elements appear one after another, how wvwr the document flow will be there
+by defaut, HTML elements appear one after another, how ever the document flow will be there
 
 by using the position property::after-move elements anywhere in webpage
 -fix elements on screen(fixed)
@@ -26,7 +26,7 @@ with out positions:
 1. static: 
 default position in HTML element
 -static is going to start from 0X0 browser
--top,bottom,left,right properties are not going to works for the stativc position
+-top,bottom,left,right properties are not going to works for the static position
 
 
 position:value;
